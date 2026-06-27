@@ -48,9 +48,9 @@ export const createTaskController = async (req, res) => {
     const { title, description, due_date } = req.body;
 
     if (!title || !title.trim()) {
-      return res.status(400).trim({
+      return res.status(400).json({
         success: false,
-        messsage: "Task title cannot be empty",
+        message: "Task title cannot be empty",
       });
     }
 
@@ -62,7 +62,7 @@ export const createTaskController = async (req, res) => {
 
     res.status(201).json({
       success: true,
-      message: "Task create successfully",
+      message: "Task created successfully",
       data: newTask,
     });
   } catch (error) {
@@ -154,7 +154,7 @@ export const deleteTaskController = async (req, res) => {
   try {
     const { id } = req.params;
 
-    const existingTask = findTaskById(id);
+    const existingTask = await findTaskById(id);
 
     if (!existingTask) {
       return res.status(404).json({
