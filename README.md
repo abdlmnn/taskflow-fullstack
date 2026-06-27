@@ -85,7 +85,11 @@ Status values:
 | active   | Shows incomplete tasks |
 | inactive | Shows completed tasks  |
 
+<<<<<<< HEAD
 # Client
+=======
+## Frontend Setup
+>>>>>>> d71595ec4f89e6f173bb700b998979439ff98123
 
 The frontend is built with React + Vite.
 
@@ -98,27 +102,47 @@ node -v
 npm -v
 ```
 
+<<<<<<< HEAD
 ## Frontend Setup
 
 Go to the frontend folder:
+=======
+## Install Frontend Dependencies
+
+From the root project folder, go to the frontend folder:
+>>>>>>> d71595ec4f89e6f173bb700b998979439ff98123
 
 ```bash
 cd client
 ```
 
+<<<<<<< HEAD
 Install the dependencies:
+=======
+Install the required frontend dependencies:
+>>>>>>> d71595ec4f89e6f173bb700b998979439ff98123
 
 ```bash
 npm install
 ```
 
+<<<<<<< HEAD
 Run the frontend server:
+=======
+## Run the Frontend Development Server
+
+Start the React + Vite development server:
+>>>>>>> d71595ec4f89e6f173bb700b998979439ff98123
 
 ```bash
 npm run dev
 ```
 
+<<<<<<< HEAD
 The frontend runs on:
+=======
+After running the command, the frontend will be available at:
+>>>>>>> d71595ec4f89e6f173bb700b998979439ff98123
 
 ```txt
 http://localhost:5173
