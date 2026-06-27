@@ -46,7 +46,7 @@ export const createTask = (taskData) => {
             title,
             description,
             due_date,
-            is_complete: 0,
+            is_completed: 0,
           });
         }
       },
