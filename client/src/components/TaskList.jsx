@@ -66,19 +66,16 @@ function TaskList({
       {tasks.length === 0 ? (
         <p className="state-message">No tasks found.</p>
       ) : (
-        <div
-          className={`task-board ${status !== "all" ? "single-column" : ""}`}
-        >
+        <div className="task-board">
           {showActiveTasks && (
             <section className="task-column">
               <div className="column-header">
-                {/* <span className="status-dot status-blue" />*/}
                 <h3>Active Tasks</h3>
                 <span>{activeTasks.length}</span>
               </div>
 
               {activeTasks.length === 0 ? (
-                <p className="state-message">No active tasks.</p>
+                <p className="state-message">No incomplete tasks.</p>
               ) : (
                 <ul className="task-list">
                   {activeTasks.map((task) => (
@@ -98,7 +95,6 @@ function TaskList({
           {showDoneTasks && (
             <section className="task-column">
               <div className="column-header">
-                {/* <span className="status-dot status-green" />*/}
                 <h3>Done Tasks</h3>
                 <span>{completedTasks.length}</span>
               </div>

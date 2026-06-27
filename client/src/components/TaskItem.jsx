@@ -9,7 +9,7 @@ function TaskItem({ task, onDelete, onEdit, onMarkDone }) {
         <div className="task-title-row">
           <div>
             <p className="priority-tag">
-              {task.is_completed ? "Completed" : "Active"}
+              {task.is_completed ? "Completed" : "Incomplete"}
             </p>
             <h3>{task.title}</h3>
           </div>
@@ -57,10 +57,14 @@ function TaskItem({ task, onDelete, onEdit, onMarkDone }) {
           </div>
         </div>
 
-        {task.description && <p className="task-description">{task.description}</p>}
+        {task.description && (
+          <p className="task-description">{task.description}</p>
+        )}
 
         <div className="task-meta-row">
-          {task.due_date && <span className="due-date">Due: {task.due_date}</span>}
+          {task.due_date && (
+            <span className="due-date">Due: {task.due_date}</span>
+          )}
           {!task.is_completed && (
             <button
               className="done-button"
