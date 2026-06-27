@@ -1,6 +1,4 @@
-# TaskFlow Fullstack
-
-## Backend
+# Server
 
 The backend is built with Node.js/Express.js, and SQLite for database.
 
@@ -41,7 +39,7 @@ The backend runs on:
 http://localhost:5000
 ```
 
-## Backend API
+### Backend API
 
 Base URL:
 
@@ -86,3 +84,42 @@ Status values:
 | all      | Shows all tasks        |
 | active   | Shows incomplete tasks |
 | inactive | Shows completed tasks  |
+
+# Client
+
+The frontend is built with React + Vite.
+
+### Prerequisites
+
+Make sure Node.js and npm are installed:
+
+```bash
+node -v
+npm -v
+```
+
+## Frontend Setup
+
+Go to the frontend folder:
+
+```bash
+cd client
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Run the frontend server:
+
+```bash
+npm run dev
+```
+
+The frontend runs on:
+
+```txt
+http://localhost:5173
+```
